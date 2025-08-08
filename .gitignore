@@ -1,0 +1,7 @@
+# Drupal/PHP
+/web/sites/default/settings.php
+/web/sites/default/files/
+/vendor/
+/node_modules/
+/.env
+.DS_Store

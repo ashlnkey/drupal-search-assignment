@@ -1,0 +1,9 @@
+name: My Custom Umami Theme
+type: theme
+base theme: umami
+description: 'Custom theme extending Umami with Bootstrap filter layout.'
+core_version_requirement: ^10
+libraries:
+  - mytheme/global-styling
+package: Custom
+

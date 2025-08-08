@@ -1,0 +1,20 @@
+<?php
+
+function mytheme_preprocess_views_exposed_form(&$variables) {
+    dd($variables);
+  $form = &$variables['form'];
+
+  foreach ($form as $key => &$element) {
+    if (!is_array($element) || empty($element['#type'])) {
+      continue;
+    }
+
+    $element['#attributes']['class'][] = 'col-12';
+    $element['#attributes']['class'][] = 'col-md-2';
+    $element['#attributes']['class'][] = 'col-lg-3';
+  }
+
+  // Add row class to the whole form
+  $form['#attributes']['class'][] = 'row';
+  $form['#attributes']['class'][] = 'g-2';
+}
