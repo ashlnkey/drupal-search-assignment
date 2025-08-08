@@ -33,6 +33,8 @@ This package contains a complete setup for:
 
 ## 🚀 Setup Instructions
 composer install
+composer require drush/drush:*
+drush cim
 
 ### 1. Clone Project
 git clone https://github.com/ashlnkey/drupal-search-assignment.git
